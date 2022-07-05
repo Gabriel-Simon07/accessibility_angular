@@ -1,5 +1,5 @@
 import { ContentChildren, Directive, HostListener, QueryList } from "@angular/core";
-import { KeyboarManagedItemDirective } from "./keyboard- managed-item.directive";
+import { KeyboarManagedItemDirective } from "./keyboard-managed-item.directive";
 
 @Directive({
     selector: '[appKm]'
