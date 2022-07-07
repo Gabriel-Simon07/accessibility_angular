@@ -16,6 +16,7 @@ export class YesNoButtonGroupComponent implements OnInit, ControlValueAccessor {
 
   @Input() public value: string = null;
   @Output() public valueChange = new EventEmitter<string>();
+  @Input() disabled = false;
   @Input() public label: string = '';
   public id: string = null;
   public options = YesNoButtonGroupOptions;
@@ -45,7 +46,7 @@ export class YesNoButtonGroupComponent implements OnInit, ControlValueAccessor {
   }
 
   public setDisabledState?(isDisabled: boolean): void {
-    throw new Error('Method not implemented.');
+    this.disabled = isDisabled;
   }
 
   public activate (value: string):void {
